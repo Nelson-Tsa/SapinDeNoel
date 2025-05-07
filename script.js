@@ -2,11 +2,19 @@ const tailleInput = document.getElementById("taille");
 const divSapin = document.getElementById("sapinDiv");
 const boutonGenerer = document.getElementById("generer");
 const tailleValue = document.getElementById("tailleValue");
+const supprimerForet = document.getElementById("supprimerForet");
 let tailleChoisie 
 
+supprimerForet.addEventListener("click", function() {
+    divSapin.innerHTML = '';
+    sapin = [];
+    console.log("La forêt a été supprimée.");
+  })
 
 tailleChoisie = tailleInput.value;
 tailleValue.innerHTML = tailleChoisie;
+
+
 
     tailleInput.addEventListener("input", function() {
       tailleChoisie = tailleInput.value;
