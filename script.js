@@ -71,6 +71,7 @@ tailleValue.innerHTML = tailleChoisie;
 
  }
 
+ const couleur = ["#00f", "#f00", "#0f0", "#ff0"]
 
   function afficherEtage(hauteur, pointe_offset, espacement) {
     // const nouveauSapin = document.createElement("p")
@@ -88,6 +89,7 @@ tailleValue.innerHTML = tailleChoisie;
               let choix;
               if (j > 0 && (result[j - 1] === 'O' || result[j - 1] === '+' || result[j - 1] === '~')) {
                   choix = '*';
+                  
               } else {
                   choix = decoration[Math.floor(Math.random() * decoration.length)];
               }
@@ -104,6 +106,7 @@ tailleValue.innerHTML = tailleChoisie;
                 let choix;
                 if (j > 0 && (result[j - 1] === 'O' || result[j - 1] === '+' || result[j - 1] === '~' )) {
                     choix = '*';
+                    
                 } else {
                     choix = decoration[Math.floor(Math.random() * decoration.length)];
                 }
