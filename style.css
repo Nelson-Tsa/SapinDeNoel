@@ -1,0 +1,14 @@
+p{
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#sapinDiv{
+    display: flex;
+     gap: 10px;
+    text-align: center;
+    /* width: 400px; */
+    height: auto;
+}

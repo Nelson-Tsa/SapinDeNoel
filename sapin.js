@@ -1,3 +1,26 @@
+const tailleInput = document.getElementById("taille");
+const divSapin = document.getElementById("sapinDiv");
+const boutonGenerer = document.getElementById("generer");
+const tailleValue = document.getElementById("tailleValue");
+let tailleChoisie 
+
+
+tailleChoisie = tailleInput.value;
+tailleValue.innerHTML = tailleChoisie;
+
+    tailleInput.addEventListener("input", function() {
+      tailleChoisie = tailleInput.value;
+      tailleValue.innerHTML = tailleChoisie;
+      console.log(tailleChoisie);
+  })
+
+  boutonGenerer.addEventListener("click", function() {
+    divSapin.innerHTML = '';
+    afficherSapin(tailleChoisie, tailleChoisie);
+  })
+
+
+
 
 // Sapin de Noël Test pour comprendre les étapes ------
 
