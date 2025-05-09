@@ -7,7 +7,8 @@ body{
     padding: 0;
     height: 100vh; 
     width: 100%; /* Assure que le body prend toute la hauteur */
-    background-image: url('/img/foret-neige.avif');
+    /* background-image: url('/img/foret-neige.avif'); */
+    background: linear-gradient(0deg,rgba(139, 34, 195, 0) 0%, rgba(189, 142, 142, 1) 82%, rgba(217, 217, 217, 1) 100%);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -55,6 +56,7 @@ p{
     height: auto;
     max-width: 100%; /* Limite la largeur au conteneur parent */
     overflow: hidden;
+    
 }
 
 
@@ -69,4 +71,25 @@ p{
 }
 .jaune{
     color: #ff0;
+    
 }
+.orange{
+    color: #ff7f00;
+}
+.violet{
+    color: #800080;
+}
+.rose{
+    color: #ff1493;
+}
+.marron {
+    color: #8B4513;
+}
+.aiguilles {
+    background: linear-gradient(to right, white, #0f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
